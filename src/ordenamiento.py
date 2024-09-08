@@ -1,6 +1,19 @@
 def evaluar(numero1, numero2, numero3, numero4):
-    # TODO: Coloca aquí el código del ejercicio 5: Ordenamiento
-    return "";
+    
+    if numero1 > numero2:
+        numero1, numero2 = numero2, numero1
+    if numero1 > numero3:
+        numero1, numero3 = numero3, numero1
+    if numero1 > numero4:
+        numero1, numero4 = numero4, numero1
+    if numero2 > numero3:
+        numero2, numero3 = numero3, numero2
+    if numero2 > numero4:
+        numero2, numero4 = numero4, numero2
+    if numero3 > numero4:
+        numero3, numero4 = numero4, numero3
+    
+    return f"{numero1} {numero2} {numero3} {numero4}"
 
 if __name__ == '__main__':
     print("Número 1:", end="")
